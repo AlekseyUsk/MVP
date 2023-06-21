@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentUsers">
+
+    <fragment
+        android:id="@+id/fragmentUsers"
+        android:name="com.bignerdranch.android.mvp.lesson2_moxy_cicerone.ui.FragmentUsers"
+        android:label="FragmentUsers" >
+        <action
+            android:id="@+id/action_fragmentUsers_to_screenFragment"
+            app:destination="@id/screenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenFragment"
+        android:name="com.bignerdranch.android.mvp.lesson2_moxy_cicerone.ui.ScreenFragment"
+        android:label="fragment_screen"
+        tools:layout="@layout/fragment_screen" />
+</navigation>
